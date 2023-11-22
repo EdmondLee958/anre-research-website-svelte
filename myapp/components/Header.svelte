@@ -1,0 +1,56 @@
+<script>
+    import anre-temp from "$lib/anre-temp.jpg";
+    export let name;
+</script>
+
+<header className="pt-20 pb-12">
+    <!-- {/* ANRE RESEARCH ICON */} -->
+    <div>
+      <img src={anre-temp} className={styles.circularImage} width={100} height={100}/>
+    </div>
+
+    <!-- {/* <div className="w-12 h-12 rounded-full block mx-auto mb-4 bg-gradient-conic from-gradient-3 to-gradient-4" /> */} -->
+
+    <p className="text-2xl dark:text-white text-center drop-shadow">
+        <a href="/">{name}</a>
+    </p>
+</header>
+
+<style>
+    .circularMask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .circularImage {
+        /*position: relative;*/
+        overflow: hidden;
+        border-radius: 50%;
+    }
+</style>
+
+<!-- import Link from 'next/link';
+import Image from 'next/image';
+import styles from "./Header.module.css";
+
+export default function Header({ name }) {
+  return (
+    <header className="pt-20 pb-12">
+      {/* ANRE RESEARCH ICON */}
+      <div>
+        <Image className={styles.circularImage} src="/anre-temp.jpg" width={100} height={100}/>
+      </div>
+
+      {/* <div className="w-12 h-12 rounded-full block mx-auto mb-4 bg-gradient-conic from-gradient-3 to-gradient-4" /> */}
+
+      <p className="text-2xl dark:text-white text-center drop-shadow">
+        <Link href="/">
+          <a>{name}</a>
+        </Link>
+      </p>
+    </header>
+  );
+} -->
