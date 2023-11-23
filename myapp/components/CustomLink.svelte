@@ -1,11 +1,12 @@
-<script>
-    export let href = "/";
-    export let otherProps = "";
+<script lang="ts">
+  export let href: string;
+  export let otherProps: Array<string>;
 </script>
 
-<nav>
-    <a href={href}>{otherProps}</a>
-</nav>
+<a {href} {...otherProps}>
+  <slot>
+  </slot>
+</a>
 <!-- import Link from 'next/link';
 
 export default function CustomLink({ as, href, ...otherProps }) {
